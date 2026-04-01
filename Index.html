@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVSite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="shortcut icon" href="./source/logo/icon new loto.png" />
+
+
+    <link href="./style/index.css" rel="stylesheet">
+    <link href="./style/indexfolder/header.css" rel="stylesheet">
+    <link href="./style/indexfolder/preloader.css" rel="stylesheet">
+
+    <link href="./style/indexfolder/mainsection.css" rel="stylesheet">
+    <link href="./style/indexfolder/newexperience.css" rel="stylesheet">
+    <link href="./style/indexfolder/reloadscreen.css" rel="stylesheet">
+
+    <link href="./style/indexfolder/section2.css" rel="stylesheet">
+    <link href="./style/indexfolder/section4.css" rel="stylesheet">
+    <link href="./style/indexfolder/section3.css" rel="stylesheet">
+    <link href="./style/indexfolder/section5.css" rel="stylesheet">
+    <link href="./style/indexfolder/section6.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--
+    <div class="preloader">
+        <div class="drop"></div>
+        <div class="circle-border"></div>
+    </div> 
+    -->
+
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">PProyect</a>
+
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa fa-bars" id="menuIcon"></i>
+            </div>
+
+            <ul class="nav-links" id="navLinks">
+                <li>
+                    <a href="#" class="iconflagsMX" onclick="changeLanguage('es')">
+                        <img src="https://flagcdn.com/w40/mx.png" 
+                            alt="México" 
+                            class="flag" 
+                            style="width:30px; height:30px; margin-left:5px; vertical-align:middle; border-radius: 50%;">
+                    </a>
+                    <a href="#" class="iconflagsUSA" onclick="changeLanguage('en')">
+                        <img src="https://flagcdn.com/w40/us.png" 
+                            alt="USA" 
+                            class="flag" 
+                            style="width:30px; height:30px; margin-left:5px; vertical-align:middle; border-radius: 50%;">
+                    </a>
+                </li>
+                <li>
+                    <a href="#Me">
+                        <i class="fa fa-user"></i>
+                        <span data-lang="yo">Yo</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Portfolio">
+                        <i class="fa fa-info-circle"></i>
+                        <span data-lang="portfolio">Portafolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Flayers">
+                        <i class="fa fa-newspaper"></i>
+                        <span data-lang="flayers">Flayers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Personal">
+                        <i class="fa fa-folder"></i>
+                        <span data-lang="personal">Personal</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./components/default/Mantenimiento.html">
+                        <i class="fa fa-sign-in-alt"></i>
+                        <span data-lang="login">Iniciar Sesión</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <!-- Main -->
+        <section class="main" id="main">
+            <div class="main-content container">
+                <h1 data-lang="main-title">
+                    Aprende algo nuevo, que esperas a conocer nuevas cosas.
+                </h1>
+                <p class="text-white" data-lang="main-sub">Un viaje sin regreso, significa un progreso.</p>
+                <a href="#btn" class="btn-button" id="experience-btn" data-lang="btn-exp">Entra a una nueva experiencia</a>
+            </div>
+        </section>
+        
+        <!-- New Experience-->
+        <div class="new-experience" id="new-experience">
+            <div class="petal petal1"></div>
+            <div class="petal petal2"></div>
+            <div class="petal petal3"></div>
+            <div class="petal petal4"></div>
+            <div class="petal petal5"></div>
+            <div class="petal petal6"></div>
+            <div class="petal petal7"></div>
+            <div class="petal petal8"></div>
+            <div class="petal petal9"></div>
+            <div class="petal petal10"></div>
+
+            <div class="experience-content">
+                <div class="line top"></div>
+                <div class="line bottom"></div>
+                <div class="line left"></div>
+                <div class="line right"></div>
+
+                <div class="experience-text">
+                    <h2 data-lang="exp-title">Bienvenido a una nueva dimensión</h2>
+
+                    <p class="text-white" data-lang="exp-desc1">
+                        Descubre un mundo de posibilidades que la IA te dara. Aquí encontrarás experiencias transformadoras que te llevarán más allá de lo convencional.
+                    </p>
+
+                    <p class="text-white" data-lang="exp-desc2">
+                        ¿Estás listo para comenzar este viaje con Yin IA?
+                    </p>
+                </div>
+
+                <div class="experience-buttons">
+                    <button class="btn-yes" id="btn-yes" data-lang="exp-yes">
+                        Sí, estoy listo
+                    </button>
+
+                    <button class="btn-no" id="btn-no" data-lang="exp-no">
+                        Ahora no
+                    </button>
+                </div>
+
+                <button class="close-experience" id="close-experience">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Reload Screen-->
+        <div class="loading-screen" id="loading-screen">
+            <div class="loader"></div>
+            <div class="loading-text" data-lang="loading-text">
+                Cargando tu nueva experiencia...
+            </div>
+            <div class="loading-progress">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+
+        <section class="section-2" id="Me">
+            <span class="s2-line top"></span>
+            <span class="s2-line bottom"></span>
+            <span class="s2-line left"></span>
+            <span class="s2-line right"></span>
+
+            <section class="section2-split">
+
+                <div class="section2-image reveal-left">
+                    <img src="./source/img/foto.jpeg" alt="Profile">
+                </div>
+
+                <div class="section2-text reveal-right">
+                    <h1 class="text-white delay-1" data-lang="about-title">
+                        Hola, Soy <span>Aldrich</span>
+                    </h1>
+
+                    <h3 class="text-white delay-2" data-lang="about-role">
+                        Soy un Desarrollador de Software
+                    </h3>
+
+                    <p class="text-white delay-3" data-lang="about-desc">
+                        Soy Aldrich Benny Verdin Ramos, esta es mi pagina de presentacion, soy un chico recien egresado con 
+                        ganas de implementar mi conocimiento en la vida laboral.
+                    </p>
+
+                    <br>
+
+                    <div class="icondiv reveal delay-4">
+                        <a href="https://www.facebook.com/aldrich.verdin" target="_blank">
+                            <i class="fa-brands fa-facebook iconsection2"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/aldrich-benny-verdin-ramos-b888b1389/" target="_blank">
+                            <i class="fa-brands fa-linkedin iconsection2"></i>
+                        </a>
+                        <a href="https://github.com/aldrichverdin-code" target="_blank">
+                            <i class="fa-brands fa-github iconsection2"></i>
+                        </a>
+                        <a href="https://wa.me/526647653217" target="_blank">
+                            <i class="fa-brands fa-whatsapp iconsection2"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </section>
+        </section>
+
+        <section class="section-4" id="Portfolio">
+            <div class="section4-header">
+                <h2>PProyects</h2>
+                <span class="badge" data-lang="portfolio">Portafolio</span>
+            </div>
+
+            <div class="gallery-container">
+                <div class="slide active slide1" onclick="activateSlide(this)">
+                    <div class="vertical-label">01</div>
+
+                    <div class="slide-content"></div>
+
+                    <div class="headers-group">
+                        <div class="slide-title" data-lang="p1-title">Proyecto 01</div>
+                        <span class="date-brand" data-lang="p1-date">Abril - Julio 2025</span>
+                        <h2 class="movie-name">Assets Managment</h2>
+                        <p class="description-subtitle" data-lang="p1-desc">Aplicación web desarrollada con .NET Core MVC, en la que se crearon las API y sus llamadas utilizando marcos de trabajo como Bootstrap, jQuery y AJAX. Se implementó en una base de datos creada desde cero con SQL Server. 
+                            El proyecto consiste en la gestión del equipo informático asignado al personal de la empresa.
+                        </p>
+                    </div>
+
+                    <br /><br />
+                    <button class="See-button" data-images="./source/img/proyect/assets (1).webp, ./source/img/proyect/assets (2).webp, ./source/img/proyect/assets (3).webp">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <g class="eye-open">
+                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </g>
+
+                            <path class="eye-closed" d="M5 12c2 3 4 4 7 4s5-1 7-4"></path>
+
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="slide slide2" onclick="activateSlide(this)">
+                    <div class="vertical-label">02</div>
+
+                    <div class="slide-content"></div>
+
+                    <div class="headers-group">
+                        <div class="slide-title" data-lang="p2-title">Proyecto 02</div>
+                        <span class="date-brand" data-lang="p2-date">Septiembre - Enero 2023 - 2024</span>
+                        <h2 class="movie-name">Digiproduct</h2>
+                        <p class="description-subtitle" data-lang="p2-desc">Aplicación móvil desarrollada con React Native Expo utilizando un marco de 
+                            trabajo como Bootstrap, integrada con un back-end creado en Django para la generación de API y una base de datos 
+                            MySQL. El proyecto consiste en un catálogo de productos que la empresa pone a disposición en tiempo real.</p>
+                    </div>
+
+                    <br /><br />
+                    <button class="See-button" data-video="source/video/Digiproducts.mp4">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <g class="eye-open">
+                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </g>
+
+                            <path class="eye-closed" d="M5 12c2 3 4 4 7 4s5-1 7-4"></path>
+
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="slide slide3" onclick="activateSlide(this)">
+                    <div class="vertical-label">03</div>
+
+                    <div class="slide-content"></div>
+
+                    <div class="headers-group">
+                        <div class="slide-title" data-lang="p3-title">Proyecto 03</div>
+                        <span class="date-brand" data-lang="p3-date">Agosto 2023</span>
+                        <h2 class="movie-name">Educia</h2>
+                        <p class="description-subtitle" data-lang="p3-desc">Aplicación móvil y web desarrollada con React Native Expo y React utilizando marcos como Bootstrap y CSS puro. 
+                            Creada con un backend de Laravel para la generación de API, la base de datos se creó también en MySQL y MongoDB. 
+                            El proyecto consiste en un sistema de control de asistencia que permite a los profesores llevar un mejor registro de la asistencia 
+                            de los alumnos, con pruebas fehacientes.</p>
+                    </div>
+
+                    <br /><br />
+                    <button class="See-button" data-video="./source/video/Educia.mp4" >
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <g class="eye-open">
+                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </g>
+
+                            <path class="eye-closed" d="M5 12c2 3 4 4 7 4s5-1 7-4"></path>
+
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="slide slide4" onclick="activateSlide(this)">
+                    <div class="vertical-label">04</div>
+
+                    <div class="slide-content"></div>
+
+                    <div class="headers-group">
+                        <div class="slide-title" data-lang="p4-title">Proyecto 04</div>
+                        <span class="date-brand" data-lang="p4-date">Agosto 2025</span>
+                        <h2 class="movie-name">MayorStore</h2>
+                        <p class="description-subtitle" data-lang="p4-desc">Aplicación web desarrollada con React, utilizando Bootstrap y CSS para la interfaz de usuario y Django para 
+                            el back-end. Se creó una base de datos con PostgreSQL, en la que se implementaron API y sus respectivas llamadas, 
+                            con varios niveles de usuario. El proyecto consiste en un sistema de seguimiento de pedidos de textiles, en el que los pedidos de 
+                            ropa se realizan a través de la interfaz de usuario, mientras que el control de inventario y la gestión de pedidos se llevan a cabo 
+                            en la interfaz de administración.</p>
+                    </div>
+
+                    <br /><br />
+                    <button class="See-button" data-video="./source/video/MayorStore.mkv">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+                            <g class="eye-open">
+                                <path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </g>
+
+                            <path class="eye-closed" d="M5 12c2 3 4 4 7 4s5-1 7-4"></path>
+
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="video-modal" id="videoModal">
+            <div class="modal-content">
+                <span class="close-modal" id="closeModal">&times;</span>
+
+                <video id="videoPlayer" controls>
+                    <source id="videoSource" src="" type="video/mp4">
+                </video>
+
+                <img id="fallbackImage" />
+
+                <button id="prevImg" class="nav-btn">⟨</button>
+                <button id="nextImg" class="nav-btn">⟩</button>
+            </div>
+        </div>
+
+        <section class="section-3" id="Flayers">
+
+            <div class="section3-header">
+                <h2>PProyects</h2>
+                <span class="badge" data-lang="flyers">Fliyer's</span>
+            </div>
+            
+            <!-- News Ticker -->
+            <div class="news-ticker">
+                <div class="ticker-container">
+                    <div class="ticker-item" data-lang="t1">Diseños proprios!</div>
+                    <div class="ticker-item" data-lang="t2">Creatividad al maximo y desarollo grande</div>
+                    <div class="ticker-item" data-lang="t3">Espero que les guste - ¡Gracias por su apoyo!</div>
+                    <div class="ticker-item" data-lang="t4">Proximo proyecto en camino</div>
+                    
+                    <div class="ticker-item" data-lang="t1">Diseños proprios!</div>
+                    <div class="ticker-item" data-lang="t2">Creatividad al maximo y desarollo grande</div>
+                    <div class="ticker-item" data-lang="t3">Espero que les guste - ¡Gracias por su apoyo!</div>
+                    <div class="ticker-item" data-lang="t4">Proximo proyecto en camino</div>
+                </div>
+            </div>
+
+            <div id="sphere-container"></div>
+            
+            <!-- MODAL -->
+            <div id="modal" class="modal">
+                <span class="close">&times;</span>
+                <img id="modal-img" src="">
+            </div>
+            
+        </section>
+
+        <section class="section-5" id="Personal">
+            <div class="section5-header">
+                <h2>PProyects</h2>
+                <span class="badge" data-lang="personal">Personal</span>
+            </div>
+            <div class="video-container">
+                <!-- video content -->
+                <div class="video-content">
+
+                    <div class="video-left">
+                        <video class="today-video" playsinline>
+                            <source src="./source/video/Alan Walker - Alone.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-title-full">
+                            <h1 data-lang="video-title">Today PProyect Commments</h1>
+                        </div>
+
+                        <div class="settings">
+                            <button id="settingsBtn"><i class="fa fa-bars"></i></button>
+
+                            <div class="settings-menu">
+
+                                <!-- VELOCIDAD -->
+                                <div class="menu-group">
+                                    <div class="menu-item has-submenu" data-menu="speed" data-lang="speed">Velocidad</div>
+
+                                    <div class="submenu" id="speed-menu">
+                                        <div class="menu-item" data-speed="0.5">0.5x</div>
+                                        <div class="menu-item active" data-speed="1">1x</div>
+                                        <div class="menu-item" data-speed="1.5">1.5x</div>
+                                        <div class="menu-item" data-speed="2">2x</div>
+                                    </div>
+                                </div>
+
+                                <!-- CALIDAD -->
+                                <div class="menu-group">
+                                    <div class="menu-item has-submenu" data-menu="quality" data-lang="quality">Calidad</div>
+
+                                    <div class="submenu" id="quality-menu">
+                                        <div class="menu-item active" data-quality="1080">1080p</div>
+                                        <div class="menu-item" data-quality="720">720p</div>
+                                        <div class="menu-item" data-quality="480">480p</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="seek-feedback left">10s</div>
+                        <div class="seek-feedback right">10s</div>
+
+                        <div class="video-controls">
+                            <button id="playPause">▶</button>
+
+                            <button id="back10">< 10</button>
+                            <button id="forward10">10 ></button>
+
+                            <input type="range" id="progress" value="0">
+                            <div class="volume-container">
+                                <button id="volumeBtn"><i class="fa-solid fa-volume-low"></i></button>
+                                <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+                            </div>
+
+                            <span id="timeDisplay">0:00 / 0:00</span>
+                            <button id="fullscreen">⛶</button>
+
+                        </div>
+
+                        <canvas id="previewCanvas"></canvas>
+                        <div id="timePreview"></div>
+
+
+                        <div class="rating">
+                            ⭐ 5 <span class="quality" data-lang="video-label">Video</span>
+                        </div>
+
+                        <div class="play-btn">▶</div>
+                       
+                    </div>
+
+                    <div class="video-right">
+                        <h1 data-lang="personal-title">Proyecto Personal de mi Pagina</h1>
+                        <p class="meta" data-lang="personal-meta">POR ALDRICH · FEB 10, 2026 · VIDEO</p>
+                        <p class="description" data-lang="personal-desc">
+                            Este apartado es para comentar un poco de mi y acerca de lo que estoy haciendo. La pagina es un template de un proyecto personal acerca de contenido audiovisual como peliculas, libros y series.
+                            Un ejemplo es el reproductor de video de esta seccion es creado por mi para mostrar un ejemplo de lo que estoy haciendo en la pagina principal.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- video cards -->
+                <div class="video-cards">
+                    <div class="card">
+                        <img src="./source/img/portada(1).jpeg" alt="">
+                        <span class="tag hd" data-lang="image">Imagen</span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./source/img/portada(2).jpeg" alt="">
+                        <span class="tag cam" data-lang="image">Imagen</span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./source/img/portada(3).jpeg" alt="">
+                        <span class="tag trailer" data-lang="image">Imagen</span>
+                    </div>
+
+                    <div class="card">
+                        <img src="./source/img/portada(4).jpeg" alt="">
+                        <span class="tag hd" data-lang="image">Imagen</span>
+                    </div>
+                </div>
+
+                <div class="img-modal" id="imgModal">
+                    <img class="modal-img" id="modalImg">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section-6" id="Footer">
+            <div class="background6">
+                <div class="ocean">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div>
+                <div class="section6-container reveal">
+                    <!-- TOP -->
+                    <div class="footer-top">
+                        <div class="footer-logo">
+                            <img class="footerlogo" src="./source/logo/icon new loto.png"/>
+                            <h2>PProyect</h2>
+                        </div>
+
+                        <div class="footer-social">
+                            <a href="https://www.facebook.com/aldrich.verdin" target="_blank">f</a>
+                            <a href="https://www.linkedin.com/in/aldrich-benny-verdin-ramos-b888b1389/" target="_blank">in</a>
+                            <a href="https://github.com/aldrichverdin-code" target="_blank">gh</a>
+
+                        </div>
+                    </div>
+
+                    <div class="footer-bottom">
+                        <span>© 2025 — 2026 PProyect</span>
+
+                        <div class="footer-legal">
+                            <a href="./components/default/Mantenimiento.html" data-lang="cookies">Política Cookies</a>
+                            <a href="./components/default/Mantenimiento.html" data-lang="legal">Aviso legal</a>
+                            <a href="./components/default/Mantenimiento.html" data-lang="privacy">Privacidad</a>
+                            <a href="./components/default/Mantenimiento.html" data-lang="info">Información</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+
+</html>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+<script src="./js/indexfolderjs/header.js"></script>
+<script src="./js/indexfolderjs/preloader.js"></script>
+<script src="./js/indexfolderjs/newexperience.js"></script>
+
+<script src="./js/indexfolderjs/section2.js"></script>
+<script src="./js/indexfolderjs/section4.js"></script>
+<script src="./js/indexfolderjs/section3.js"></script>
+<script src="./js/indexfolderjs/section5.js"></script>
+<script src="./js/esp-en.js"></script>
+
+
+
+
+

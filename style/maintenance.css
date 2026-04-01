@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    overflow-x: hidden;
+    background-image: url(../../source/img/paisaje-oriental-del-anime.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.containerM {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 90vh;
+}
+
+.left img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.right {
+    max-width: 60%;
+}
+
+.right h1 {
+    font-size: 60px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+button {
+    background-color: #ff659e;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #d81b61;
+}
+
+@media (max-width: 768px) {
+
+    .containerM {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .left {
+        order: 1; 
+        margin-bottom: 20px;
+    }
+
+    .right {
+        order: 2; 
+        max-width: 100%; 
+        margin-top: -50px;
+    }
+
+    .left img {
+        max-width: 100%;
+        margin-top: 50%;
+    }
+
+    .right h1 {
+        font-size: 40px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
