@@ -163,6 +163,31 @@ function changeLanguage(lang) {
     });
 
     document.documentElement.lang = lang;
+
+    changeVideoByLanguage(lang);
+}
+
+function changeVideoByLanguage(lang) {
+    const video = document.getElementById("mainVideo");
+
+    let newSrc = "";
+
+    if (lang === "es") {
+        newSrc = "./source/video/videopresentacion.mp4";
+    } else if (lang === "en") {
+        newSrc = "./source/video/Digiproducts.mp4";
+    }
+
+    if (video.src !== window.location.origin + "/" + newSrc) {
+        const wasPlaying = !video.paused;
+
+        video.src = newSrc;
+        video.load();
+
+        if (wasPlaying) {
+            video.play();
+        }
+    }
 }
 
 window.addEventListener("DOMContentLoaded", () => {
