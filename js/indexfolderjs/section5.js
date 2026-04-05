@@ -355,14 +355,40 @@ video.addEventListener('play', () => {
 
 /*ATAJO TECLADOS*/
 document.addEventListener('keydown', (e) => {
+    if (modalSphere.style.display === "flex") return;
+    const isHoveringVideo = videoContainer.matches(':hover');
+    if (!isHoveringVideo) return;
+
     if (e.code === 'Space') {
         e.preventDefault();
         video.paused ? video.play() : video.pause();
     }
+
+    function updateVolumeIcon() {
+        if (video.muted || video.volume === 0) {
+            volumeIcon.className = 'fa-solid fa-volume-xmark';
+        } else if (video.volume <= 0.3) {
+            volumeIcon.className = 'fa-solid fa-volume-off';
+        } else if (video.volume <= 0.7) {
+            volumeIcon.className = 'fa-solid fa-volume-low';
+        } else {
+            volumeIcon.className = 'fa-solid fa-volume-high';
+        }
+    }
+
     if (e.code === 'ArrowRight') video.currentTime += 10;
     if (e.code === 'ArrowLeft') video.currentTime -= 10;
-    if (e.code === 'KeyM') video.muted = !video.muted;
-    if (e.code === 'KeyF') video.requestFullscreen();
+    if (e.code === 'KeyM') {
+        video.muted = !video.muted;
+        updateVolumeIcon();
+    }
+    if (e.code === 'KeyF') {
+    if (!document.fullscreenElement) {
+        videoContainer.requestFullscreen();
+    } else {
+        document.exitFullscreen();
+    }
+}
 });
 
 /*FORMATO DE TIEMPO*/
