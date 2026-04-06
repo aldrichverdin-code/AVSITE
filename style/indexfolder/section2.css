@@ -1,6 +1,6 @@
 /*  section 2  */
 .section-2 {
-    height: 50vh;
+    height: 100vh;
     background-color: rgb(255, 101, 158, 0.82);
     display: flex;
     justify-content: center;
@@ -24,7 +24,8 @@
 .section2-image img {
     width: 100%;
     max-width: 400px;
-    height: 30vh;
+    height: 100%;
+    max-height: 400px;
     border-radius: 100%;
     box-shadow: 0 0 40px rgb(133, 0, 48);
 }
@@ -74,7 +75,7 @@
 }
 
 /* Responsive */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .section2-split {
         flex-direction: column;
         text-align: center;
@@ -135,6 +136,7 @@
     opacity: 0;
     transform: translateX(80px);
     transition: all 1s ease;
+    margin-right: 100px;
 }
 
 .reveal-left.show,
@@ -235,7 +237,7 @@
 /* SECTION 3 */
 
 .section-3 {
-    height: 60vh;
+    height: 100vh;
     background-image: url(../../source/img/paisaje-oriental-del-anime.webp);
     background-size: cover;
     background-position: center;
@@ -429,7 +431,7 @@
 
 /* SECION 4*/
 .section-4 {
-    height: 70vh;
+    height: 100vh;
     background-color: rgb(255, 101, 158, 0.82);
     display: flex;
 }
@@ -888,7 +890,7 @@
 .section-5 {
     background: #02080d;
     color: white;
-    height: 75vh;
+    height: 100vh;
     background-image: url(../../source/img/paisaje-oriental-del-anime.webp);
     background-size: cover;
     background-position: center;
