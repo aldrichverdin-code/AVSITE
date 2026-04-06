@@ -85,18 +85,18 @@
 }
 
 .slide1 {
-    background-image: url('../../source/img/netcore.jpg');
+    background-image: url('../../source/img/netcore.webp');
 }
 .slide2 {
-    background-image: url('../../source/img/azuloscuro.jpg');
+    background-image: url('../../source/img/azuloscuro.webp');
 }
 
 .slide3 {
-    background-image: url('../../source/img/azulclaro.jpg');
+    background-image: url('../../source/img/azulclaro.webp');
 }
 
 .slide4 {
-    background-image: url('../../source/img/rojooscuro.jpg');
+    background-image: url('../../source/img/rojooscuro.webp');
 }
 
 /* Ocultar contenido en slides inactivos */
