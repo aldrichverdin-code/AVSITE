@@ -22,7 +22,7 @@ const translations = {
         "about-role": "Soy un Desarrollador de Software",
         "about-desc": "Soy Aldrich Benny Verdin Ramos, esta es mi pagina de presentacion, soy un chico recien egresado con ganas de implementar mi conocimiento en la vida laboral.",
 
-        "projects-title": "PProyects",
+        "projects-title": "AVSites",
         "portfolio": "Portafolio",
 
         "p1-title": "Proyecto 01",
@@ -49,7 +49,7 @@ const translations = {
         "t4": "Próximo proyecto en camino",
 
         "personal": "Personal",
-        "video-title": "Today PProyect Comments",
+        "video-title": "Proyecto Personal de mi Página",
         "speed": "Velocidad",
         "quality": "Calidad",
         "video-label": "Video",
@@ -124,7 +124,7 @@ const translations = {
         "t4": "Next project coming soon",
 
         "personal": "Personal",
-        "video-title": "Today Project Comments",
+        "video-title": "Personal Project of My Website",
         "speed": "Speed",
         "quality": "Quality",
         "video-label": "Video",
@@ -175,7 +175,7 @@ function changeVideoByLanguage(lang) {
     if (lang === "es") {
         newSrc = "./source/video/videopresentacion.mp4";
     } else if (lang === "en") {
-        newSrc = "./source/video/Digiproducts.mp4";
+        newSrc = "./source/video/PRESENTATION.mp4";
     }
 
     if (video.src !== window.location.origin + "/" + newSrc) {
