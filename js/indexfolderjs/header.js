@@ -37,3 +37,54 @@ navLinks.querySelectorAll("a").forEach(link => {
         menuToggle.classList.remove("active");
     });
 });
+
+// ===== NEW EXPERIENCE =====
+const experienceBtn = document.getElementById("experience-btn");
+const newExperience = document.getElementById("new-experience");
+const closeExperience = document.getElementById("close-experience");
+const btnNo = document.getElementById("btn-no");
+const btnYes = document.getElementById("btn-yes");
+const loadingScreen = document.getElementById("loading-screen");
+const progressBar = document.getElementById("progress-bar");
+
+experienceBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    newExperience.classList.add("active");
+    document.body.classList.add("blur-background");
+});
+
+[closeExperience, btnNo].forEach(btn => {
+    btn.addEventListener("click", () => {
+        newExperience.classList.remove("active");
+        document.body.classList.remove("blur-background");
+    });
+});
+
+newExperience.addEventListener("click", (e) => {
+    if (e.target === newExperience) {
+        newExperience.classList.remove("active");
+        document.body.classList.remove("blur-background");
+    }
+});
+
+btnYes.addEventListener("click", () => {
+    newExperience.classList.remove("active");
+    loadingScreen.classList.add("active");
+
+    let progress = 0;
+
+    const interval = setInterval(() => {
+        progress += Math.random() * 15;
+
+        if (progress >= 100) {
+            progress = 100;
+            clearInterval(interval);
+
+            setTimeout(() => {
+                window.location.href = "./components/default/Mantenimiento.html";
+            }, 800);
+        }
+
+        progressBar.style.width = progress + "%";
+    }, 300);
+});

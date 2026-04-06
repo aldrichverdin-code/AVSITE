@@ -1,3 +1,4 @@
+//section 3
 // CONTENEDOR
 const container = document.getElementById("sphere-container");
 
