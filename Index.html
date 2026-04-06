@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AVSite</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="shortcut icon" href="./source/logo/icon new loto.png" />
 
 
@@ -31,12 +28,14 @@
                     <a href="#" class="iconflagsMX" onclick="changeLanguage('es')">
                         <img src="https://flagcdn.com/w40/mx.png" 
                             alt="México" 
+                            loading="lazy"
                             class="flag" 
                             style="width:30px; height:30px; margin-left:5px; vertical-align:middle; border-radius: 50%;">
                     </a>
                     <a href="#" class="iconflagsUSA" onclick="changeLanguage('en')">
                         <img src="https://flagcdn.com/w40/us.png" 
                             alt="USA" 
+                            loading="lazy"
                             class="flag" 
                             style="width:30px; height:30px; margin-left:5px; vertical-align:middle; border-radius: 50%;">
                     </a>
@@ -156,7 +155,7 @@
             <section class="section2-split">
 
                 <div class="section2-image reveal-left">
-                    <img src="./source/img/foto.webp" alt="Profile">
+                    <img src="./source/img/foto.webp" loading="lazy" alt="Profile">
                 </div>
 
                 <div class="section2-text reveal-right">
@@ -335,7 +334,7 @@
                     <source id="videoSource" src="" type="video/mp4">
                 </video>
 
-                <img id="fallbackImage" />
+                <img id="fallbackImage" loading="lazy"/>
 
                 <button id="prevImg" class="nav-btn">⟨</button>
                 <button id="nextImg" class="nav-btn">⟩</button>
@@ -353,27 +352,27 @@
             <div class="bento-grid">
 
                 <div class="bento-item large">
-                    <img src="./source/img/FLIYERS/mesas.webp" alt="">
+                    <img src="./source/img/FLIYERS/mesas.webp" loading="lazy" alt="">
                 </div>
 
                 <div class="bento-item">
-                    <img src="./source/img/FLIYERS/TACOS.webp" alt="">
+                    <img src="./source/img/FLIYERS/TACOS.webp" loading="lazy" alt="">
                 </div>
 
                 <div class="bento-item">
-                    <img src="./source/img/FLIYERS/VIAJE.webp" alt="">
+                    <img src="./source/img/FLIYERS/VIAJE.webp" loading="lazy" alt="">
                 </div>
 
                 <div class="bento-item wide">
-                    <img src="./source/img/FLIYERS/WEB.webp" alt="">
+                    <img src="./source/img/FLIYERS/WEB.webp" loading="lazy" alt="">
                 </div>
 
                 <div class="bento-item">
-                    <img src="./source/img/FLIYERS/WEBEXAMPLE.webp" alt="">
+                    <img src="./source/img/FLIYERS/WEBEXAMPLE.webp"  loading="lazy" alt="">
                 </div>
 
                 <div class="bento-item">
-                    <img src="./source/img/FLIYERS/WEBGREEN.webp" alt="">
+                    <img src="./source/img/FLIYERS/WEBGREEN.webp" loading="lazy" alt="">
                 </div>
 
             </div>
@@ -381,7 +380,7 @@
 
             <div id="modal" class="modal">
                 <span class="close">&times;</span>
-                <img id="modal-img" src="">
+                <img id="modal-img" src="" loading="lazy">
             </div>
 
         </section>
@@ -396,7 +395,7 @@
                 <div class="video-content">
 
                     <div class="video-left">
-                        <video id="mainVideo" class="today-video" playsinline poster="./source/logo/icon new loto.png">
+                        <video id="mainVideo" class="today-video" playsinline preload="none" poster="./source/logo/icon new loto.png">
                         </video>
                         <div class="video-title-full">
                             <h1 data-lang="video-title">Proyecto Personal de mi Página</h1>
@@ -480,22 +479,22 @@
                 <!-- video cards -->
                 <div class="video-cards">
                     <div class="card">
-                        <img src="./source/img/portada(1).webp" alt="">
+                        <img src="./source/img/portada(1).webp" loading="lazy" alt="">
                         <span class="tag hd" data-lang="image">Imagen</span>
                     </div>
 
                     <div class="card">
-                        <img src="./source/img/portada(2).webp" alt="">
+                        <img src="./source/img/portada(2).webp" loading="lazy" loading="lazy" alt="">
                         <span class="tag cam" data-lang="image">Imagen</span>
                     </div>
 
                     <div class="card">
-                        <img src="./source/img/portada(3).webp" alt="">
+                        <img src="./source/img/portada(3).webp" loading="lazy" alt="">
                         <span class="tag trailer" data-lang="image">Imagen</span>
                     </div>
 
                     <div class="card">
-                        <img src="./source/img/portada(4).webp" alt="">
+                        <img src="./source/img/portada(4).webp" loading="lazy" alt="">
                         <span class="tag hd" data-lang="image">Imagen</span>
                     </div>
                 </div>
@@ -510,11 +509,6 @@
 </body>
 
 </html>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-
 <script src="./js/indexfolderjs/header.js"></script>
 
 <script src="./js/indexfolderjs/section2.js"></script>
