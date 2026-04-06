@@ -50,12 +50,12 @@ scene.add(group);
 
 // IMÁGENES
 const images = [
-  "./source/img/FLIYERS/mesas.png",
-  "./source/img/FLIYERS/TACOS.png",
-  "./source/img/FLIYERS/VIAJE.png",
-  "./source/img/FLIYERS/WEB.png",
-  "./source/img/FLIYERS/WEBEXAMPLE.jpeg",
-  "./source/img/FLIYERS/WEBGREEN.jpeg"
+  "./source/img/FLIYERS/mesas.webp",
+  "./source/img/FLIYERS/TACOS.webp",
+  "./source/img/FLIYERS/VIAJE.webp",
+  "./source/img/FLIYERS/WEB.webp",
+  "./source/img/FLIYERS/WEBEXAMPLE.webp",
+  "./source/img/FLIYERS/WEBGREEN.webp"
 ];
 
 // TEXTURA
